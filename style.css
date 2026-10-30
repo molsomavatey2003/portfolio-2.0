@@ -486,3 +486,195 @@ html {
 }
 
 
+
+/* Portfolio 2.2 — Case Study */
+
+.case-study {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 20px;
+    box-sizing: border-box;
+}
+
+.case-intro {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 60px;
+    box-sizing: border-box;
+    text-align: left;
+
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 0 12px 40px rgba(50, 30, 40, 0.06);
+}
+
+.case-intro > p:first-child {
+    color: #722F45;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.case-intro h1 {
+    font-size: clamp(36px, 6vw, 60px);
+    line-height: 1.15;
+    letter-spacing: -2px;
+    margin: 25px 0;
+}
+
+.case-intro > p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.case-intro a {
+    display: inline-block;
+    margin-top: 30px;
+    color: #722F45;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.case-intro a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .case-study {
+        padding: 30px 16px;
+    }
+
+    .case-intro {
+        padding: 30px 24px;
+    }
+}
+
+/* Case Study — Project Details */
+
+.case-details {
+    max-width: 850px;
+    width: 100%;
+    margin: 30px auto 0;
+}
+
+.detail-card {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid #FFFFFF;
+    border-radius: 28px;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.detail-card h2 {
+    font-size: 28px;
+    margin: 28px 0 12px;
+}
+
+.detail-card p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    .detail-card {
+        padding: 28px 24px;
+    }
+}
+
+/* Case Study — Technical Workflow */
+
+.workflow {
+    padding-left: 24px;
+    margin: 20px 0 30px;
+}
+
+.workflow li {
+    padding-left: 8px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #71666C;
+}
+
+.workflow li::marker {
+    color: #722F45;
+    font-weight: bold;
+}
+
+/* Case Study — Screenshot */
+
+.case-screenshot {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    border-radius: 18px;
+    border: 1px solid #E8D8DE;
+    box-sizing: border-box;
+}
+
+/* Portfolio 2.2 — Project Links */
+
+.project-link {
+    display: inline-block;
+    margin-top: 24px;
+    color: #722F45;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.project-link:hover {
+    transform: translateX(4px);
+    text-decoration: underline;
+}
+
+.project-link:focus-visible {
+    outline: 2px solid #722F45;
+    outline-offset: 5px;
+    border-radius: 3px;
+}
+
+/* Portfolio 2.2 — Mobile Case Study */
+
+@media (max-width: 600px) {
+    .case-study {
+        padding: 24px 14px 50px;
+    }
+
+    .case-intro {
+        padding: 30px 22px;
+        border-radius: 22px;
+    }
+
+    .case-intro h1 {
+        font-size: clamp(32px, 9vw, 42px);
+        letter-spacing: -1px;
+        overflow-wrap: break-word;
+    }
+
+    .case-intro > p {
+        font-size: 15px;
+    }
+
+    .case-details {
+        margin-top: 18px;
+    }
+
+    .detail-card {
+        padding: 28px 22px;
+        border-radius: 22px;
+    }
+
+    .detail-card h2 {
+        font-size: 24px;
+    }
+
+    .case-screenshot {
+        width: 100%;
+        height: auto;
+    }
+}
